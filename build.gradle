@@ -29,9 +29,3 @@ java {
 tasks.processResources {
     filteringCharset = 'UTF-8'
 }
-
-tasks.jar {
-    from('src/main/resources') {
-        include 'plugin.yml'
-    }
-}
