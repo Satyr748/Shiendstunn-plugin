@@ -5,6 +5,10 @@ plugins {
 group = 'com.shiendstunn'
 version = '1.0.0'
 
+base {
+    archivesName = 'Shiendstunn'
+}
+
 repositories {
     mavenCentral()
     maven {
@@ -19,5 +23,15 @@ dependencies {
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+tasks.processResources {
+    filteringCharset = 'UTF-8'
+}
+
+tasks.jar {
+    from('src/main/resources') {
+        include 'plugin.yml'
     }
 }
