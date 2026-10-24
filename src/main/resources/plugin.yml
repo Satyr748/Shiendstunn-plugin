@@ -1,0 +1,14 @@
+name: Shiendstunn
+version: 1.0.0
+main: com.shiendstunn.ShiendstunnPlugin
+api-version: '1.21'
+description: Erlaubt Spielern, mit /fgt zwischen Survival und Creative zu wechseln.
+author: Shiendstunn
+commands:
+  fgt:
+    description: Wechselt zwischen Survival und Creative.
+    usage: /fgt
+permissions:
+  shiendstunn.fgt:
+    description: Erlaubt die Nutzung von /fgt.
+    default: true
