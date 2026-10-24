@@ -4,7 +4,8 @@ name: Build Shiendstunn
 on:
   workflow_dispatch:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   build:
@@ -33,3 +34,5 @@ jobs:
         with:
           name: Shiendstunn-JAR
           path: build/libs/*.jar
+          if-no-files-found: error
+```
