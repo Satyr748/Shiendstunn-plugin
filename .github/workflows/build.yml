@@ -35,4 +35,3 @@ jobs:
           name: Shiendstunn-JAR
           path: build/libs/*.jar
           if-no-files-found: error
-```
